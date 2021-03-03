@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+ion-content{
+    --background: #313131;
+}
+
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    padding: 20px 30px;
+}
+
+.close{
+    font-size: 36px;
+    color: white; 
+    margin-right: 20px;
+    margin-top: 20px;
+
+}
+
+h1{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.card{
+    background-color: transparent;
+    border: 2px solid #EEF275;
+    color: #fff;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+ion-card-header{
+    background-color: #EEF275;
+}
+.flex-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.bank{
+    color: #313131;
+    font-size: 16px;
+}
+
+.x{
+    font-size: 20px;
+    color: #313131;
+}
+
+p{
+    padding: 0 15px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.add{
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.icon{
+    font-size: 24px;
+    margin-left: 20px;
+    color: #fff;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.flex-add{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 20px;
+}

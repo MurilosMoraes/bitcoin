@@ -1,0 +1,67 @@
+<ion-content>
+  <!-- REGISTER 1 -->
+  <div *ngIf="register1">
+
+    <div class="flex">
+      <ion-icon [routerLink]="['/lobby']" class="back" name="arrow-back-outline"></ion-icon>
+      <h1>Preencha seus dados para criar sua conta</h1>
+    </div>
+
+    <div class="mg-top-30">
+      <ion-input class="inputs" type="text" placeholder="Nome Completo"></ion-input>
+      <ion-input class="inputs" type="number" placeholder="CPF ou CNPJ + CPF"></ion-input>
+      <ion-input class="inputs" type="number" placeholder="Número RG"></ion-input>
+      <ion-input class="inputs" type="text" placeholder="Orgão expedidor"></ion-input>
+      <ion-input class="inputs" type="text" placeholder="Endereço"></ion-input>
+      <ion-input class="inputs" type="text" placeholder="Bairro"></ion-input>
+      <ion-input class="inputs" type="text" placeholder="Cidade"></ion-input>
+    </div>
+
+    <div>
+      <ion-button (click)="exibirRegistro2()" class="cta-light">Continuar</ion-button>
+    </div>
+
+  </div>
+
+  <!-- REGISTER 2 -->
+  <div *ngIf="register2">
+
+    <div class="flex">
+      <ion-icon (click)="exibirRegistro1()" class="back" name="arrow-back-outline"></ion-icon>
+      <h1>Preencha seus dados para criar sua conta</h1>
+    </div>
+
+    <div class="mg-top-30">
+      <ion-input class="inputs" type="text" placeholder="Estado"></ion-input>
+      <ion-input class="inputs" type="number" placeholder="CEP"></ion-input>
+      <ion-input class="inputs" type="text" placeholder="País"></ion-input>
+      <ion-input class="inputs" type="email" placeholder="Email"></ion-input>
+      <ion-input class="inputs" type="number" placeholder="Celular"></ion-input>
+    </div>
+
+    <div>
+      <ion-button class="cta-light" (click)="exibirRegistro3()">Continuar</ion-button>
+    </div>
+  </div>
+
+  <!-- REGISTER 3 -->
+
+  <div *ngIf="register3">
+
+    <div class="flex">
+      <ion-icon (click)="exibirRegistro2()" class="back" name="arrow-back-outline"></ion-icon>
+      <h1>Tire uma foto frente e verso do seu RG/CNH</h1>
+    </div>
+
+
+    <div class="mg-top-30">
+      <img class="selfie" src="../../assets/selfie.png" alt="">
+    </div>
+
+    <div>
+      <ion-button class="cta-light">Abrir a camera</ion-button>
+    </div>
+
+  </div>
+
+</ion-content>

@@ -1,21 +1,34 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+<ion-content>
+
+  <ion-toolbar class="toolbar">
+    <ion-buttons slot="end">
+      <ion-menu-button><img class="img" src="../../assets/menu.png" alt=""></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
+    <h1 class="title">
+      Bitcoin P2P
+    </h1>
   </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div>
+    <h2 class="sub">
+      Acompanhe a cotação <br> diária do Bitcoin
+    </h2>
+    <img class="bitcoin" src="../../assets/bitcoin.png" alt="">
   </div>
+
+
 </ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <div class="footer">
+      <div class="flex" [routerLink]="['/comprar']">
+        <img class="icon" src="../../assets/comprar.png" alt="">
+        <h1 class="txt-comprar">Comprar</h1>
+      </div>
+      <div class="flex" [routerLink]="['/vender']">
+        <img class="icon" src="../../assets/vender.png" alt="">
+        <h1 class="txt-vender">Vender</h1>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-footer>

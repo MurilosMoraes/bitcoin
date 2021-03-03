@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ion-content {
+  --background: #313131;
+}
+
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 20px 30px;
+}
+
+
+.close {
+  font-size: 42px;
+  color: white;
+  margin-right: 20px;
+
+}
+
+h1 {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.container {
+  padding: 30px 50px;
+}
+
+.aviso {
+  margin-top: 20px;
+  color: #EEF275;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.banco {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.text {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 300;
+}
+
+span {
+  font-weight: 700;
+  color: #fff;
+
+}
+
+.nome {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.cta-light {
+  --background: #EEF275;
+  color: #313131;
+  font-size: 20px;
+  border: 2px solid #313131;
+  border-radius: 100px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+ion-button {
+  width: 80%;
+  margin-left: 10%;
+  height: 55px;
+  --border-radius: 100px;
+}
+
+.clip {
+  width: 30px;
+  object-fit: cover;
+
+}
+
+.anexar {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #EEF275;
+    font-weight: 300;
+  }

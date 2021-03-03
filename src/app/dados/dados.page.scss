@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+ion-content{
+    --background: #313131;
+}
+
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    padding: 20px 30px;
+}
+
+.close{
+    font-size: 36px;
+    color: white; 
+    margin-right: 20px;
+    margin-top: 20px;
+
+}
+
+h1{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    
+}
+.cta-light {
+    --background: #313131;
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid #EEF275;
+    border-radius: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  ion-button {
+    width: 80%;
+    margin-left: 10%;
+    height: 55px;
+    --border-radius: 100px;
+  }

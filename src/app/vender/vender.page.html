@@ -1,0 +1,114 @@
+<ion-content>
+
+  <!-- VENDER 1 -->
+
+  <div *ngIf="vender1">
+    <div class="flex">
+      <ion-icon [routerLink]="['/folder/inbox']" class="close" name="close-outline"></ion-icon>
+      <h1>Insira o valor que deseja vender</h1>
+    </div>
+    <div class="mg-top-50">
+      <ion-item class="input">
+        <ion-label class="label" position="stacked">Você tem...</ion-label>
+        <ion-input placeholder="0,00000000 BTC"></ion-input>
+      </ion-item>
+      <ion-item class="input">
+        <ion-label class="label" position="stacked">E quer...</ion-label>
+        <ion-input placeholder="= R$ 0,00"></ion-input>
+      </ion-item>
+
+    </div>
+
+
+    <div>
+      <ion-button (click)="exibirVender2()" class="cta-light">Continuar</ion-button>
+    </div>
+  </div>
+  <!-- VENDER 2  -->
+  <div *ngIf="vender2">
+    <div class="flex">
+      <ion-icon (click)="exibirVender1()" class="close" name="arrow-back-outline"></ion-icon>
+      <h1>Preencha os campos com seus dados</h1>
+    </div>
+    <div class="mg-top-50">
+      <ion-item class="input">
+        <ion-input type="text" placeholder="Nome completo"></ion-input>
+      </ion-item>
+      <ion-item class="input">
+        <ion-input type="number" placeholder="CEP"></ion-input>
+      </ion-item>
+      <ion-item class="input">
+        <ion-input type="text" placeholder="Endereço"></ion-input>
+      </ion-item>
+      <ion-item class="input">
+        <ion-input type="number" placeholder="Número"></ion-input>
+      </ion-item>
+      <ion-item class="input">
+        <ion-input type="text" placeholder="Complemento"></ion-input>
+      </ion-item>
+
+    </div>
+
+    <div>
+      <ion-button (click)="exibirVender3()" class="cta-light">Continuar</ion-button>
+    </div>
+  </div>
+
+  <!-- VENDER 3 -->
+  <div *ngIf="vender3">
+    <div class="flex">
+      <ion-icon (click)="exibirVender2()" class="close" name="arrow-back-outline"></ion-icon>
+      <h1>Preencha os campos com seus dados bancários</h1>
+    </div>
+    <div class="mg-top-50">
+      <ion-item class="input">
+        <ion-input type="text" placeholder="Banco"></ion-input>
+      </ion-item>
+      <ion-item class="input">
+        <ion-input type="number" placeholder="Agência"></ion-input>
+      </ion-item>
+      <ion-item class="input">
+        <ion-input type="number" placeholder="Conta com dígito"></ion-input>
+      </ion-item>
+      <ion-item class="input">
+        <ion-input type="number" placeholder="CPF"></ion-input>
+      </ion-item>
+      <ion-item class="input">
+        <ion-input type="text" placeholder="Complemento"></ion-input>
+      </ion-item>
+
+    </div>
+
+    <div>
+      <ion-button (click)="exibirVender4()" class="cta-light">Continuar</ion-button>
+    </div>
+
+  </div>
+  <!-- VENDER 4 -->
+  <div *ngIf="vender4">
+    <div class="flex-4">
+      <ion-icon (click)="exibirVender3()" class="close" name="arrow-back-outline"></ion-icon>
+      <ion-icon class="ellipsis" name="ellipsis-vertical-sharp"></ion-icon>
+    </div>
+
+    <div>
+      <h1 class="title">
+        Aponte sua câmera para escanear o QR code
+      </h1>
+    </div>
+
+    <div>
+      <img class="qr" src="../../assets/qr-code.png" alt="">
+    </div>
+
+    <div>
+      <h1 class="btc">Transfira 0,00000000 BTC <br> para nossa carteira.</h1>
+    </div>
+
+    <div>
+      <ion-button [routerLink]="['/status']" class="cta-light">Continuar</ion-button>
+    </div>
+
+  </div>
+
+</ion-content>

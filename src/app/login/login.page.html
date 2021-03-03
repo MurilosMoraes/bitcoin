@@ -1,0 +1,44 @@
+<ion-content>
+  <div class="container">
+    <div>
+      <h1>
+        Olá,
+      </h1>
+      <p>
+        Entre com a sua conta
+      </p>
+    </div>
+
+    <div class="flex">
+      <div class="container-face">
+        <img class="imgs" src="../../assets/facebook.png" alt="">
+      </div>
+      <div class="container-google">
+        <img class="imgs" src="../../assets/google.png" alt="">
+      </div>
+      <div class="container-apple">
+        <img class="imgs" src="../../assets/apple.png" alt="">
+      </div>
+    </div>
+    <div>
+      <p class="ou">ou</p>
+    </div>
+
+    <div class="container-esqueceu">
+      <ion-input class="inputs" type="text" placeholder="Nome Completo"></ion-input>
+      <ion-input class="inputs" type="number" placeholder="CPF ou CNPJ + CPF"></ion-input>
+      <p class="esqueceu">
+        Esqueceu sua senha?
+      </p>
+    </div>
+
+    <div>
+      <ion-button [routerLink]="['/folder/inbox']" class="cta-light">Entrar</ion-button>
+    </div>
+
+    <div>
+      <p [routerLink]="['/register']" class="create">Criar minha conta</p>
+    </div>
+  
+  </div>
+</ion-content>

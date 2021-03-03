@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ion-content {
+  --background: #313131;
+}
+
+
+.close {
+  font-size: 42px !important;
+  color: white;
+  margin-right: 20px;
+  position: absolute;
+  margin-left: 20px;
+}
+
+h1 {
+  width: 70%;
+  margin-left: 20%;
+  margin-top: 30px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+.card{
+    background-color: transparent;
+    border: 2px solid #EEF275;
+    color: #fff;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+    border-radius: 15px;
+
+}
+ion-card-header{
+    background-color: #EEF275;
+}
+.flex-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.bank{
+    color: #313131;
+    font-size: 16px;
+}
+
+.x{
+    font-size: 20px;
+    color: #313131;
+}
+
+.status{
+    width: 10px;
+    border-radius: 100%;
+    background-color: #16d43c;
+    height: 10px;
+}
+
+.status2{
+    width: 10px;
+    border-radius: 100%;
+    background-color: #e92d33;
+    height: 10px;
+}
+ion-card-content{
+    padding: 10px;
+}
+
+.flex-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-top: 5px;
+}
+
+.icons-card{
+    width: 22px;
+    height: 22px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.icon-mais{
+    width: 18px;
+    height: 22px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+
+.icon-menos{
+    width: 18px;
+    height: 22px;
+    object-fit: cover;
+    margin-right: 10px;
+    transform: rotate(180deg);
+}
+.content-card{
+    font-size: 16px;
+}
+
+span{
+    font-weight: 700;
+}
+
+.dNone{
+    display: none;
+}

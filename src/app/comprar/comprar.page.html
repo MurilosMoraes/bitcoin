@@ -1,0 +1,24 @@
+<ion-content>
+  <div class="flex">
+    <ion-icon [routerLink]="['/folder/inbox']" class="close" name="close-outline"></ion-icon>
+    <h1>Insira o valor que deseja comprar</h1>
+  </div>
+  <div class="mg-top-50">
+    <ion-item class="input">
+      <ion-label class="label" position="stacked">Você tem...</ion-label>
+      <ion-input placeholder="R$ 0,00"></ion-input>
+    </ion-item>
+    <ion-item class="input">
+      <ion-label class="label" position="stacked">E quer...</ion-label>
+      <ion-input placeholder="= 0,00000000 BTC"></ion-input>
+    </ion-item>
+  </div>
+
+
+  <div>
+    <ion-button [routerLink]="['/dados']" class="cta-light">Continuar</ion-button>
+  </div>
+
+
+
+</ion-content>
